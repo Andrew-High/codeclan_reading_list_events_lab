@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const formSubmit = document.querySelector('#new-item-form');
   formSubmit.addEventListener('submit', handleFormSubmit);
 
+  const deleteButton = document.querySelector('#delete-all');
+  deleteButton.addEventListener('click', handleDeleteButton);
 
 
 })
@@ -27,4 +29,9 @@ const handleFormSubmit = function (event) {
   newUnorderedList.id = "list-item"
 
   const clearForm = document.querySelector("#new-item-form").reset();
+}
+
+const handleDeleteButton = function () {
+  const resultDeleteButton = document.querySelector('#reading-list')
+  resultDeleteButton.textContent = ''
 }
