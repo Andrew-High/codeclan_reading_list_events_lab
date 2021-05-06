@@ -24,6 +24,7 @@ const handleFormSubmit = function (event) {
   newUnorderedList.appendChild(newULListItem1).textContent = `${event.target.title.value}`
   newUnorderedList.appendChild(newULListItem2).textContent = `${event.target.author.value}`
   newUnorderedList.appendChild(newULListItem3).textContent = `${event.target.category.value}`
+  newUnorderedList.id = "list-item"
 
   const clearForm = document.querySelector("#new-item-form").reset();
 }
